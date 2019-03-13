@@ -1,1 +1,77 @@
-﻿
+﻿/*  Fichier : style.css                                             *
+ *                                                                  *
+ *  Feuille de style de l'exercice sur le formulaire d'inscription  *
+ *                                                                  *
+ *  @ C:/wamp64/www/projetNFA021/HTML/inscription.html              */
+
+
+/*  Balises    */
+   
+a{
+    display: block;
+    text-align: center;
+}
+input{
+    position: relative;
+    margin-top: 10px;
+}
+p{
+    font-weight: bold;
+    font-size: large;
+    position: relative;
+    top: 10px;
+    text-align: center;  
+}
+
+/*  Id  */
+
+#formulaire{
+    position: absolute;
+    margin-top: 100px;
+    left: 50%;
+    
+}
+#lien{
+    position: relative;
+    top: 10px;
+}
+#naissance{
+    color : gray;
+}
+
+/*  Classes */
+
+.boutons{
+    width: 70px;
+    height: 20px;
+    margin-left: 20px;
+}
+.champs{
+    width: 200px;
+    height: 20px;
+    background-color: #ffffdd;
+    
+}
+
+/* Gestion du placeholder selon navigateur   */
+
+input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: gray;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: gray;
+   opacity:  1;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: gray;
+   opacity:  1;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: gray;
+}
+input::-ms-input-placeholder { /* Microsoft Edge */
+   color: gray;
+}
+input::placeholder { /* Most modern browsers support this now. */
+   color: gray;
+}
