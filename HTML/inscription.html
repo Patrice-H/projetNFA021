@@ -1,28 +1,33 @@
-<!-- fichier : formulaire.html -->
-<!doctype html>
-<html lang = "fr">
+<!DOCTYPE html>
+<!-- fichier : formulaire.html --><html lang="fr">
     <head>
         <title>Inscription</title>
         <meta charset="UTF-8">
-        <link rel = "stylesheet" href = "../CSS/style.css"
-        
+        <link rel="stylesheet" href="../CSS/style.css">
     </head>
     <body>
-        <div id = "formulaire">
-            <p id = "texte">S'enregistrer</p>
-            <form method = "post" onsubmit= "return envoieForm();" action = "../traitement.php">
-                <input type = "text" class = "champs" placeholder = "Nom" name = "nom"><br/>
-                <input type = "text" class = "champs" placeholder = "Prénom" name = "prenom"><br/>
-                <input type = "text" class = "champs" placeholder = "Fonction / Spécialité" name = "fonction"><br/>
-                <input type = "text" class = "champs" placeholder = "Adresse mail" name = "mail"><br/>
-                <input type = "date" id = "naissance" class = "champs" value = "jj/mm/aaaa" name = "naissance"><br/>
-                <input type = "password" class = "champs" placeholder = "Password" name = "pass"><br/>
-                <input type = "password" class = "champs" placeholder = "Repeat password" name = "repass"><br/>
-                <input type = "submit" class = "boutons" value = "Envoyer">
-                <input type = "reset" class = "boutons" value = "Effacer">
+        <div id="formulaire">
+            <p id="texte">S'enregistrer</p>
+            <form method="post" onsubmit="return envoieForm();" action="../traitement.php">
+                <input type="text" class="champs" placeholder="Nom" name="nom" required>
+                <span id="erreur_nom" class="notification"></span><br>
+                <input type="text" class="champs" placeholder="Prénom" name="prenom" required>
+                <span id="erreur_prenom" class="notification"></span><br>
+                <input type="text" class="champs" placeholder="Fonction / Spécialité" name="fonction" required>
+                <span id="erreur_fonction" class="notification"></span><br>
+                <input type="text" class="champs" placeholder="Adresse mail" name="mail" required>
+                <span id="erreur_mail" class="notification"></span><br>
+                <input type="date" id="enregistrement" class="champs" value="jj/mm/aaaa" name="enregistrement" required>
+                <span id="erreur_enregistrement" class="notification"></span><br>
+                <input type="password" class="champs" placeholder="Password" name="pass" required>
+                <span id="erreur_pass" class="notification"></span><br>
+                <input type="password" class="champs" placeholder="Repeat password" name="repass" required>
+                <span id="erreur_repass" class="notification"></span><br>
+                <input type="submit" class="boutons" value="Envoyer">
+                <input type="reset" class="boutons" value="Effacer">
             </form>
-            <a id = "lien" href = "connexion.htlm">Je possède déjà un compte</a>
+            <a id="lien" href="connexion.htlm">Je possède déjà un compte</a>
         </div>
-        <script src = "../JS/script.js"></script>
-    </body>
+        <script src="../JS/script.js"></script>
+    </body> 
 </html>
