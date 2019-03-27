@@ -1,4 +1,4 @@
-﻿/*  Fichier : style.css                                             *
+/*  Fichier : style.css                                             *
  *                                                                  *
  *  Feuille de style de l'exercice sur le formulaire d'inscription  *
  *                                                                  *
@@ -7,36 +7,36 @@
 
 /*  Balises    */
    
+
 a{
     display: block;
+    width: 200px;
     text-align: center;
 }
 input{
     position: relative;
     margin-top: 10px;
 }
-p{
-    font-weight: bold;
-    font-size: large;
-    position: relative;
-    top: 10px;
-    text-align: center;  
-}
 
 /*  Id  */
 
+#enregistrement{
+    color : gray;
+}
 #formulaire{
-    position: absolute;
-    margin-top: 100px;
-    left: 50%;
-    
+	width:600px;
+    margin: 100px auto;
 }
 #lien{
     position: relative;
     top: 10px;
 }
-#naissance{
-    color : gray;
+#texte{
+	width: 200px;
+    font-weight: bold;
+    font-size: large;
+    top: 10px;
+    text-align: center;  
 }
 
 /*  Classes */
@@ -51,6 +51,13 @@ p{
     height: 20px;
     background-color: #ffffdd;
     
+}
+.notification{
+    /*top: 280px;
+    left: 420px;*/
+    width: 300px;
+	color : red;
+	font-weight: bold;
 }
 
 /* Gestion du placeholder selon navigateur   */
