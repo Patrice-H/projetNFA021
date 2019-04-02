@@ -8,12 +8,12 @@
     <body>
         <div id="formulaire">
             <p id="texte">S'enregistrer</p>
-            <form method="post" onsubmit="return envoieForm();" action="../traitement.php">
+            <form id = "saisie" method = "post" onsubmit = "return envoieForm();" action = "../traitement.php">
                 <input type="text" class="champs" placeholder="Nom" name="nom" required>
                 <span id="erreur_nom" class="notification"></span><br>
                 <input type="text" class="champs" placeholder="Prénom" name="prenom" required>
                 <span id="erreur_prenom" class="notification"></span><br>
-                <input type="text" class="champs" placeholder="Fonction / Spécialité" name="fonction" required>
+                <input type="text" class="champs" placeholder="Fonction / Spécialité" name="fonction">
                 <span id="erreur_fonction" class="notification"></span><br>
                 <input type="text" class="champs" placeholder="Adresse mail" name="mail" required>
                 <span id="erreur_mail" class="notification"></span><br>
