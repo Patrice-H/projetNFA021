@@ -2,10 +2,12 @@
  *                                                                  *
  *  Feuille de style de l'exercice sur le formulaire d'inscription  *
  *                                                                  *
- *  @ C:/wamp64/www/projetNFA021/HTML/inscription.html              */
+ *  @see ../HTML/inscription.html              						*
+ *	@see ../administration.php										*
+ ********************************************************************/
 
 
-/*  Balises    */
+		/*  Balises    */
    
 
 a{
@@ -17,8 +19,12 @@ input{
     position: relative;
     margin-top: 10px;
 }
+table, th, td{
+	border : thin solid #bbbbbb;
+}
 
-/*  Id  */
+		/*  Id  */
+
 
 #enregistrement{
     color : gray;
@@ -38,8 +44,14 @@ input{
     top: 10px;
     text-align: center;  
 }
+#table_inscription{
+	width: 600px;
+	margin : 100px auto;	
+}
 
-/*  Classes */
+
+		/*  Classes */
+
 
 .boutons{
     width: 70px;
@@ -53,14 +65,14 @@ input{
     
 }
 .notification{
-    /*top: 280px;
-    left: 420px;*/
     width: 300px;
 	color : red;
 	font-weight: bold;
 }
 
-/* Gestion du placeholder selon navigateur   */
+
+		/* Gestion du placeholder selon navigateur   */
+
 
 input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: gray;
