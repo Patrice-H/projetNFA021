@@ -134,13 +134,14 @@ function ajaxReq(data){
 	xhr.onreadystatechange = function(){
 		if (xhr.readyState == 4){
 			if (xhr.status == 200){
+				alert(xhr.responseText);
 	    		controleMail(xhr.responseText);	
 			}
 		}
 	};
-	xhr.open("POST", "../traitement.php", true);
+	xhr.open("POST", "../enregistrement.php", true);
 	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-	xhr.send("mail="+data);
+	xhr.send("origine=reqajax&mail="+data);
 }
 
 /**
