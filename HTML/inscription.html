@@ -8,21 +8,22 @@
     <body>
         <div id="formulaire">
             <p id="texte">S'enregistrer</p>
-            <form id = "saisie" method = "post" onsubmit = "return envoieForm();" action = "../traitement.php">
-                <input type="text" class="champs" placeholder="Nom" name="nom" required>
+            <form id = "saisie" method = "post" onsubmit = "return envoieForm();" action = "../enregistrement.php">
+                <input type="text" class="champs" placeholder="Nom" name="nom" id="nomMembre"  required>
                 <span id="erreur_nom" class="notification"></span><br>
-                <input type="text" class="champs" placeholder="Prénom" name="prenom" required>
+                <input type="text" class="champs" placeholder="Prénom" name="prenom" id="prenom" required>
                 <span id="erreur_prenom" class="notification"></span><br>
-                <input type="text" class="champs" placeholder="Fonction / Spécialité" name="fonction">
+                <input type="text" class="champs" placeholder="Fonction / Spécialité" name="fonction" id="fonction">
                 <span id="erreur_fonction" class="notification"></span><br>
-                <input type="text" class="champs" placeholder="Adresse mail" name="mail" required>
+                <input type="text" class="champs" placeholder="Adresse mail" name="mail" id="mail" required>
                 <span id="erreur_mail" class="notification"></span><br>
                 <input type="date" id="enregistrement" class="champs" value="jj/mm/aaaa" name="enregistrement" required>
                 <span id="erreur_enregistrement" class="notification"></span><br>
-                <input type="password" class="champs" placeholder="Password" name="pass" required>
+                <input type="password" class="champs" placeholder="Password" name="pass" id="pass" required>
                 <span id="erreur_pass" class="notification"></span><br>
-                <input type="password" class="champs" placeholder="Repeat password" name="repass" required>
+                <input type="password" class="champs" placeholder="Repeat password" name="repass" id="repass" required>
                 <span id="erreur_repass" class="notification"></span><br>
+                <input type="hidden" name="origine" value="formulaire">
                 <input type="submit" class="boutons" value="Envoyer">
                 <input type="reset" class="boutons" value="Effacer">
             </form>
